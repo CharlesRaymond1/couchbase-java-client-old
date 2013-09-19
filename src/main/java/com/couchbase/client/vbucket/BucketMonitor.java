@@ -107,6 +107,15 @@ public class BucketMonitor extends Observable {
 
     this.headers = new HttpMessageHeaders();
   }
+  
+  /**
+   * Shuts down the channel factory that all of the bucket monitors share.  This should only be done
+   * on JVM exit due to the sharing
+   */
+  public static void shutdownChannelFactory(){
+    factory.releaseExternalResources();
+    factory.shutdown();
+  }
 
   /**
    * Take any action required when the monitor appears to be disconnected.

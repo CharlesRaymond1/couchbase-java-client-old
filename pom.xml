@@ -52,4 +52,12 @@
       <scope>compile</scope>
     </dependency>
   </dependencies>
+  
+  <distributionManagement>
+      <repository>
+          <id>aquto-deployment</id>
+          <name>Aquto 3rd Party Repo</name>
+          <url>http://nexus.aquto.internal:8081/nexus/content/groups/aquto-thirdparty</url>
+      </repository>
+  </distributionManagement>
 </project>
