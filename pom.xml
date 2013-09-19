@@ -57,7 +57,7 @@
       <repository>
           <id>aquto-deployment</id>
           <name>Aquto 3rd Party Repo</name>
-          <url>http://nexus.aquto.internal:8081/nexus/content/groups/aquto-thirdparty</url>
+          <url>http://nexus.aquto.internal:8081/nexus/content/repositories/thirdparty</url>
       </repository>
   </distributionManagement>
 </project>
